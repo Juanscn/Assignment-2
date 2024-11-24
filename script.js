@@ -65,3 +65,4 @@ buttonStars.addEventListener('click', function(){
     document.getElementById('explanation').innerHTML = "Time: 100 million years.<br>" +
     "Gravity begins pulling clouds of gas together, igniting the first stars. These stars form galaxies, clusters, and superclusters, creating the cosmic web that structures the universe. Over billions of years, elements forged in stars create the building blocks for planets and life."
 })
+
