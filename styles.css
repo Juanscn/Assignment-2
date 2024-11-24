@@ -1,24 +1,63 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
+html, body {
+    height: 100%;
+}
+
+body {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    background-color: black;
     color: white;
 }
 
-main {
+h1 {
+    text-align: center;
+    flex-shrink: 0; /* Prevents the title from shrinking */
+}
+
+#navBar {
     display: flex;
+    justify-content: space-around; /* Distribute buttons evenly */
+    background-color: grey;
+    padding: 10px;
+    flex-shrink: 0; /* Prevents navbar from shrinking */
+    width: 100%;
 }
 
-#buttonGroup {
+
+
+#content {
     display: flex;
-    flex-direction: column;
+    flex-grow: 1; /* Ensures content takes up remaining space */
+    flex-direction: row; /* Align items horizontally */
+    align-items: center; /* Vertically center the content */
+    justify-content: space-between; /* Space between the image and text */
+    padding: 20px;
+    overflow: hidden;
 }
 
-
-body {
-    background-color: black;
+#image {
+    max-width: 60%; /* Image takes up 60% of the width */
+    max-height: 100%;
+    object-fit: cover; /* Ensures image covers the area without distorting */
 }
+
+#explanation {
+    max-width: 35%; /* Explanation text takes up 35% of the width */
+    padding-left: 20px;
+    overflow: auto; /* Allow text to scroll inside the box if it's too long */
+    height: 100%; /* Ensures text box takes up the full height */
+}
+
+#navBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+}
+
