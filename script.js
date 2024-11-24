@@ -35,7 +35,8 @@ buttonInflation.addEventListener('click', function(){
     document.getElementById('image').src = 'images/expansion.png';
     document.getElementById('buttonInflation').style.backgroundColor = '#b3b2b3';
     document.getElementById('buttonInflation').style.color = '#000000';
-    document.getElementById('explanation').innerHTML = "Time: 0.00000000000000000000000000000001 seconds.<br>" + 
+    document.getElementById('explanation').innerHTML = "Time:<br>" + 
+    "0.00000000000000000000000000000001 seconds.<br>" + 
     "The universe expands at an extraordinary rate, faster than the speed of light. As it stretches out, it begins to cool. Tiny fluctuations in energy density appear, which will later form the seeds of galaxies."
 })
 

@@ -65,7 +65,7 @@ h1 {
 
 /* Mobile */
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 320px){
     body {
         flex-direction: column;
         align-items: center;
@@ -110,51 +110,100 @@ h1 {
 
 /* Tablets */
 
-@media screen and (min-width: 361px) and (max-width: 768px) {
+@media screen and (min-width: 321px) and (max-width: 768px) {
     body {
-        flex-direction: column; /* Stack elements vertically */
-        align-items: center; /* Center everything */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     #navBar {
         display: flex;
-        flex-direction: row; /* Keep items in a row, but adjust as needed */
-        justify-content: center; /* Center the buttons */
+        flex-direction: row; 
+        justify-content: center; 
         padding: 10px;
     }
 
     #buttonGroup {
         display: flex;
-        flex-wrap: wrap; /* Allow buttons to wrap */
-        justify-content: center; /* Center buttons */
-        gap: 10px; /* Add spacing between buttons */
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 10px; 
     }
 
     .universeButton {
-        font-size: 14px; /* Smaller font size for buttons */
-        padding: 8px 12px; /* Adjust button size */
+        font-size: 14px; 
+        padding: 8px 12px; 
     }
 
     #content {
-        flex-direction: column; /* Stack image and text vertically */
-        align-items: center; /* Center everything */
+        flex-direction: column; 
+        align-items: center; 
         justify-content: center;
-        padding: 20px; /* Add some space around the content */
+        padding: 20px; 
     }
 
     #image {
-        width: 100%; /* Make image responsive */
-        max-height: 250px; /* Limit height of image to prevent overflow */
-        object-fit: cover; /* Maintain aspect ratio */
+        width: 100%; 
+        max-height: 250px; 
+        object-fit: cover; 
     }
 
     #explanation {
-        max-width: 90%; /* Allow more space for text */
+        max-width: 90%; 
         padding: 20px;
         text-align: justify;
     }
 }
 
+/* Laptop */
 
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+    body {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    #navBar {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-around; 
+        padding: 20px; 
+        width: 100%; 
+    }
+
+    #buttonGroup {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between; 
+        gap: 15px; 
+    }
+
+    .universeButton {
+        font-size: 16px; 
+        padding: 10px 20px; 
+    }
+
+    #content {
+        display: flex;
+        flex-direction: row; 
+        align-items: center; 
+        justify-content: space-between; 
+        width: 80%; 
+        margin: 20px 0; 
+    }
+
+    #image {
+        width: 70%; 
+        max-height: 400px; 
+        object-fit: contain; 
+    }
+
+    #explanation {
+        width: 50%; 
+        font-size: 18px; 
+        padding: 10px;
+        text-align: justify;
+    }
+}
 
 
