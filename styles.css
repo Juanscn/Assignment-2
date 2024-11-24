@@ -65,7 +65,7 @@ h1 {
 
 /* Mobile */
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px){
     body {
         flex-direction: column;
         align-items: center;
@@ -106,11 +106,54 @@ h1 {
         font-size: 14px;
         text-align: center;
     }
-
-
 }
 
+/* Tablets */
 
+@media screen and (min-width: 361px) and (max-width: 768px) {
+    body {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center everything */
+    }
+
+    #navBar {
+        display: flex;
+        flex-direction: row; /* Keep items in a row, but adjust as needed */
+        justify-content: center; /* Center the buttons */
+        padding: 10px;
+    }
+
+    #buttonGroup {
+        display: flex;
+        flex-wrap: wrap; /* Allow buttons to wrap */
+        justify-content: center; /* Center buttons */
+        gap: 10px; /* Add spacing between buttons */
+    }
+
+    .universeButton {
+        font-size: 14px; /* Smaller font size for buttons */
+        padding: 8px 12px; /* Adjust button size */
+    }
+
+    #content {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center everything */
+        justify-content: center;
+        padding: 20px; /* Add some space around the content */
+    }
+
+    #image {
+        width: 100%; /* Make image responsive */
+        max-height: 250px; /* Limit height of image to prevent overflow */
+        object-fit: cover; /* Maintain aspect ratio */
+    }
+
+    #explanation {
+        max-width: 90%; /* Allow more space for text */
+        padding: 20px;
+        text-align: justify;
+    }
+}
 
 
 
