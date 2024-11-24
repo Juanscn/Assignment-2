@@ -11,53 +11,49 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: white;
 }
 
 h1 {
     text-align: center;
-    flex-shrink: 0; /* Prevents the title from shrinking */
+    flex-shrink: 0; 
 }
 
 #navBar {
     display: flex;
-    justify-content: space-around; /* Distribute buttons evenly */
+    justify-content: space-around; 
     background-color: grey;
     padding: 10px;
-    flex-shrink: 0; /* Prevents navbar from shrinking */
+    flex-shrink: 0;
     width: 100%;
 }
 
-
-
 #content {
     display: flex;
-    flex-grow: 1; /* Ensures content takes up remaining space */
-    flex-direction: row; /* Align items horizontally */
-    align-items: center; /* Vertically center the content */
-    justify-content: space-between; /* Space between the image and text */
-    padding: 20px;
+    flex-grow: 1; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-between; 
     overflow: hidden;
 }
 
 #image {
-    max-width: 60%; /* Image takes up 60% of the width */
+  
     max-height: 100%;
-    object-fit: cover; /* Ensures image covers the area without distorting */
+    object-fit: cover;
 }
 
 #explanation {
-    max-width: 35%; /* Explanation text takes up 35% of the width */
-    padding-left: 20px;
-    overflow: auto; /* Allow text to scroll inside the box if it's too long */
-    height: 100%; /* Ensures text box takes up the full height */
-}
-
-#navBar {
+    max-width: 50%; 
+    padding: 50px;
+    overflow: auto; 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: grey;
+    text-align: justify;
 }
+
+
 
