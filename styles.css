@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+}
+
+#buttonGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+
+body {
+    background-color: black;
+}
